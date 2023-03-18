@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100%;
+            width: 600px;
+            height: 400px;
+        }
+        .left{
+            float: left;
+            width: 200px;
+            height: 400px;
+            background-color: indianred;
+        }
+        .right{
+            float: right;
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+        }
+        .top{
+            width: 400px;
+            height: 200px;
+            background-color: green;
+        }
+        .bottom{
+            width: 400px;
+            height: 200px;
+            background-color: pink;
+        }
+        .bottom-left{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+        .bottom-right{
+            float: right;
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 大容器 -->
+    <div class="box">
+        <!-- 左右两块 -->
+        <div class="left"></div>
+        <div class="right">
+            <!-- 上下两块 -->
+            <div class="top"></div>
+            <div class="bottom">
+                <!-- 底部左右 -->
+                <div class="bottom-left"></div>
+                <div class="bottom-right"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
