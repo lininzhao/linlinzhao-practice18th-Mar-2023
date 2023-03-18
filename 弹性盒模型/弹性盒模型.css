@@ -1,0 +1,132 @@
+.nav{
+    width: 100%;
+    height: 75px;
+    background-color: #ff4433;
+    display: flex;
+    color: white;
+    font-size: 15px;
+    line-height: 75px;
+}
+.arrow{
+    width: 75px;
+    height: 75px;
+    /* background-color: pink; */
+    background: url(./images/百度周边_03.png) no-repeat center;
+}
+.search{
+    width: 75px;
+    height: 75px;
+    /* background-color: gold; */
+    background: url(./images/百度周边_08.png) no-repeat center;
+}
+.title{
+    height: 75px;
+    /* background-color: palegreen; */
+    flex-grow: 1;
+}
+/* 美食样式开始 */
+.food{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    /* 父元素开启弹性盒模型，子元素默认水平居中 */
+    display: flex;
+    /* 设置侧轴对齐方式 */
+    align-items: center;
+}
+.food>div{
+    /* 子元素平均分配父元素剩余距离的比例，一共五个儿子，每个占五分之一 */
+    flex-grow: 1;
+}
+.food a{
+    color: #000;
+    font-size: 12px;
+}
+.food img{
+    width: 40%;
+    min-width: 50px;
+}
+/* 美食样式结束 */
+/* 菜单部分样式开始 */
+.menu{
+    width: 100%;
+    height: 223px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.menu-top,.menu-bottom{
+    width: 100%;
+    height: 111px;
+    display: flex;
+    align-items: center;
+}
+.menu-top{
+    border-bottom: 1px solid #f2f4f5;
+}
+.menu-top>div{
+    flex-grow: 1;
+    border-right:1px solid #f2f4f5;
+}
+.menu-top>div:last-child{
+    border-right: 0;
+}
+.menu-bottom>div{
+    flex-grow: 1;
+    border-right:1px solid #f2f4f5;
+}
+.menu a{
+    color: #000;
+    font-size: 12px;
+}
+/* 菜单部分样式结束 */
+/* 为你优选开始 */
+.forU{
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    /* 弹性盒法水平居中 -主轴*/
+    justify-content: center;
+}
+.wrap{
+    width: 90%;
+    /* margin法水平居中 */
+    /* margin: 0 auto; */
+}
+.forU-title{
+    margin: 30px 0;
+    text-align: left;
+    font-size: 24px;
+}
+.forU-box{
+    display: flex;
+    margin-bottom: 30px;
+}
+.forU-box>div{
+    flex-grow: 1;
+}
+.forU-box img{
+    width: 100%;
+}
+/* 为你优选结束 */
+/* 页脚样式开始 */
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.footer>div{
+    flex-grow: 1;
+}
+.footer a{
+    color: #000;
+    font-size: 12px;
+}
+.footer i{
+    font-size: 24px;
+}
+/* 页脚样式结束 */
